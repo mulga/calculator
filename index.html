@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="calculator-input" value="" disabled />
+
+      <!-- calculator buttons -->
+      <div class="calculator-keys">
+        <!-- operator buttons -->
+        <button type="button" class="operator" value="+">+</button>
+        <button type="button" class="operator" value="-">-</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="operator" value="/">&divide</button>
+
+        <!-- number button 7-8-9 -->
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+
+        <!-- number buttons 4-5-6 -->
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+
+        <!-- number buttons 1-2-3 -->
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+
+        <!-- other buttons -->
+        <button type="button" value="0">0</button>
+        <button type="button" class="decimal" value=".">.</button>
+        <button type="button" class="clear" value="clear">AC</button>
+
+        <button type="button" class="equel-sign operator" value="=">=</button>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script src="script.js"></script>
+  </body>
+</html>

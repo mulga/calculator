@@ -1,0 +1,185 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* --------------------- */
+/* Reset                 */
+/* --------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+  font-size: 10px;
+} */
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0%;
+}
+
+/* set up the body */
+body {
+  font-family: "Open Sans", sans-serif;
+
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------- */
+/* Utility classes                 */
+/* --------------------- */
+
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a744;
+  --color-danger: #dc3644;
+  --color-warning: #ffc109;
+  --color-info: #18a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-white: #ffff;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* custom styles for calculate */
+
+.calculator {
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.calculator-input {
+  width: 100%;
+  font-size: 4rem;
+  height: 70px;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  text-align: right;
+  padding: 20px;
+}
+
+button {
+  height: 50px;
+  background-color: var(--color-light);
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+button:hover {
+  background-color: var(--color-info);
+}
+
+.operator {
+  color: var(--color-danger);
+}
+
+.clear {
+  background-color: var(--color-danger);
+  border-color: var(--color-light);
+  color: var(--color-light);
+}
+
+.clear:hover {
+  background-color: var(--color-warning);
+}
+
+.equel-sign {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  grid-area: 2/4/6/5;
+  height: 100%;
+}
+
+.equel-sign:hover {
+  background-color: var(--color-success);
+  color: var(--color-light);
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
